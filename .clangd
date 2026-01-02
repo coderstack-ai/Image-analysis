@@ -1,0 +1,18 @@
+CompileFlags:
+  CompilationDatabase: build
+  Add:
+    # MinGW C++ 标准库路径
+    - -ID:/Programs/msys64/mingw64/include/c++/15.2.0
+    - -ID:/Programs/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32
+    - -ID:/Programs/msys64/mingw64/include/c++/15.2.0/backward
+    - -ID:/Programs/msys64/mingw64/include
+    # 使用 MinGW 编译器
+    - --target=x86_64-w64-mingw32
+    - -std=c++17
+
+Diagnostics:
+  UnusedIncludes: None
+  MissingIncludes: None
+
+Index:
+  Background: Build

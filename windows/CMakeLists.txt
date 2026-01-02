@@ -1,7 +1,11 @@
 # windows 动态库配置
 add_library(windows_lib SHARED
     main_window.cc
-    main_window.h
+    page1/page.cc
+    page1/btn_open_gray_file.cc
+    page1/btn_open_color_file.cc
+    page2/page.cc
+    page3/page.cc
 )
 
 find_package(PkgConfig REQUIRED)
@@ -17,6 +21,7 @@ set_target_properties(windows_lib PROPERTIES
 target_include_directories(windows_lib PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}
     ${GTK4_INCLUDE_DIRS}
+    ${CMAKE_SOURCE_DIR}
 )
 
 # 链接common动态库

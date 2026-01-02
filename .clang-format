@@ -5,13 +5,13 @@ IndentWidth: 2
 TabWidth: 2
 UseTab: Never
 
-ColumnLimit: 100
+ColumnLimit: 140
 
 BreakBeforeBraces: Attach
 
 AllowShortIfStatementsOnASingleLine: false
 AllowShortLoopsOnASingleLine: false
-AllowShortFunctionsOnASingleLine: Inline
+AllowShortFunctionsOnASingleLine: None
 
 PointerAlignment: Left
 ReferenceAlignment: Left
@@ -19,7 +19,7 @@ ReferenceAlignment: Left
 SpaceBeforeParens: ControlStatements
 
 AlignAfterOpenBracket: Align
-BinPackArguments: false
-BinPackParameters: false
+BinPackArguments: true
+BinPackParameters: true
 
 SortIncludes: false
